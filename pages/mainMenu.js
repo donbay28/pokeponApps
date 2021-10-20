@@ -16,7 +16,7 @@ function mainMenu({pokemon}){
                 {
                     pokemon.map((item,idx) => (
                         <tbody>
-                            <Link href="/mainMenu/{idx}">
+                            <Link href={`/mainMenu/${++idx}`}>
                             <tr className={styles.trStyleHover}>
                                 <td><img className={styles.picture} src={item.picture} alt="Pokemon Picture" width={140} height={140} /></td>
                                 <td><p key={++idx}>{item.name}</p></td>
